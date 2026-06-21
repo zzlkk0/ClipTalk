@@ -1,0 +1,9 @@
+{
+  "port": 46666,
+  "passwordHash": "(auto-generated on first run — do not edit)",
+  "sessionSecret": "(auto-generated on first run — do not edit)",
+  "maxLoginAttempts": 5,
+  "loginWindowMinutes": 15,
+  "rateLimitWindowMs": 60000,
+  "rateLimitMax": 100
+}
