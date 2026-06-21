@@ -124,7 +124,7 @@ Or create `config.json` manually:
 
 ```json
 {
-  "port": 46666,
+  "port": 8000,
   "passwordHash": "(generated automatically on first run)",
   "sessionSecret": "(generated automatically on first run)",
   "maxLoginAttempts": 5,
@@ -144,8 +144,8 @@ node server.js
 
 ### 4. Open
 
-- **Server side**: `http://localhost:46666`
-- **PC side**: `http://<server-ip>:46666`
+- **Server side**: `http://localhost:8000`
+- **PC side**: `http://<server-ip>:8000`
 
 Default admin credentials:
 - **Username**: `admin`
@@ -156,7 +156,7 @@ Default admin credentials:
 ### 5. Open Firewall (if accessing from other machines)
 
 ```bash
-sudo ufw allow 46666/tcp
+sudo ufw allow 8000/tcp
 ```
 
 If you're on a cloud provider (AWS, Alibaba Cloud, etc.), also add the port in the security group console.
@@ -202,13 +202,13 @@ node admin-cli.js set-registration false
 
 ### SSH Tunnel (No Firewall Config Needed)
 
-If you can't open port 46666, tunnel through SSH from your PC:
+If you can't open port 8000, tunnel through SSH from your PC:
 
 ```bash
-ssh -L 46666:localhost:46666 user@your-server-ip
+ssh -L 8000:localhost:8000 user@your-server-ip
 ```
 
-Then open `http://localhost:46666` on your PC. The server browser uses `http://localhost:46666` directly.
+Then open `http://localhost:8000` on your PC. The server browser uses `http://localhost:8000` directly.
 
 ---
 
@@ -216,7 +216,7 @@ Then open `http://localhost:46666` on your PC. The server browser uses `http://l
 
 | Key | Default | Description |
 |-----|---------|-------------|
-| `port` | `46666` | HTTP server port |
+| `port` | `8000` | HTTP server port |
 | `maxLoginAttempts` | `5` | Max failed logins before rate limit |
 | `loginWindowMinutes` | `15` | Rate limit cooldown window |
 | `rateLimitWindowMs` | `60000` | Global rate limit window (ms) |

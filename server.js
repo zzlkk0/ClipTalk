@@ -12,7 +12,7 @@ const db = require('./db');
 // ─── 配置 ───────────────────────────────────────
 const CONFIG_PATH = path.join(__dirname, 'config.json');
 const config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
-const PORT = config.port || 46666;
+const PORT = config.port || 8000;
 const UPLOADS_DIR = path.join(__dirname, 'uploads');
 const HISTORY_FILE = path.join(__dirname, 'history.json');
 const I18N_DIR = path.join(__dirname, 'i18n');

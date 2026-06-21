@@ -8,3 +8,5 @@ certs/
 /tmp/
 *.log
 .DS_Store
+database/users.db-shm
+database/users.db-wal

@@ -1,5 +1,5 @@
 {
-  "port": 46666,
+  "port": 8000,
   "passwordHash": "(auto-generated on first run — do not edit)",
   "sessionSecret": "(auto-generated on first run — do not edit)",
   "maxLoginAttempts": 5,
